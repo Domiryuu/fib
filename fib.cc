@@ -2,10 +2,11 @@
 
 int fib(int i);
 
-int main(){
+int main(int argc, char *argv[]){
 	for(int i = 1; i <= 25; i++){
 		std::cout << fib(i) << std::endl;
 	}
+	return 0;
 }
 
 int fib(int i){
