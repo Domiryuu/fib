@@ -3,18 +3,16 @@
 int fib(int i);
 
 int main(){
-	for(int i = 0; i < 100; i++){
+	for(int i = 1; i <= 100; i++){
 		std::cout << fib(i) << std::endl;
 	}
 }
 
 int fib(int i){
-	if(i < 1){
+	if(1 > i){
 		return 0;
-	}else{
-		if(i==1){
-			return 1;
-		}
+	}else if(1==i){
+		return 1;
 	}
 	return (fib(i -1)) + (fib(i-2));
 }
