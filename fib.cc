@@ -9,10 +9,5 @@ int main(){
 }
 
 int fib(int i){
-	if(1 > i){
-		return 0;
-	}else if(1==i){
-		return 1;
-	}
-	return (fib(i -1)) + (fib(i-2));
+	return 1 > i ? 0 : 1 == i ? 1 : fib(i-1)+fib(i-2);
 }
