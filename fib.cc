@@ -2,10 +2,11 @@
 
 int fib(int i);
 
-int main(int argc, char *argv[]){
-	for(int i = 1; i <= 25; i++){
-		std::cout << fib(i) << std::endl;
-	}
+int main(){
+    int i = 0;
+    std::cout << "Enter a number to view it's fibonacci number (index starts at 0)\n>";
+    std::cin >> i;
+	std::cout << fib(i) << std::endl;
 	return 0;
 }
 
